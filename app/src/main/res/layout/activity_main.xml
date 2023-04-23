@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_weight="0.3"
+        android:layout_margin="3dp">
+
+            <ImageView
+                android:id="@+id/imagen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+
+            </ImageView>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_margin="3dp"
+           android:orientation="vertical"
+           android:gravity="center">
+
+           <TextView
+               android:id="@+id/pais"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"></TextView>
+           <TextView
+               android:id="@+id/lugar"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"></TextView>
+
+           <TextView
+               android:id="@+id/viento"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"></TextView>
+
+           <TextView
+               android:id="@+id/humedad"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"></TextView>
+
+       </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0.05"
+        android:weightSum="1"
+        android:layout_margin="3dp">
+
+        <TextView
+            android:id="@+id/temperatura"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:layout_margin="2dp"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/maximo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:layout_margin="2dp"></TextView>
+
+        <TextView
+            android:id="@+id/minimo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:layout_margin="2dp"></TextView>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reporte de clima" />
+
+
+
+
+</LinearLayout>
